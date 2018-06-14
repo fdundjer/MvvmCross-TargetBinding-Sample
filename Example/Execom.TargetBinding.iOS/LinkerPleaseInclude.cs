@@ -1,6 +1,5 @@
 using System.Collections.Specialized;
 using System.Windows.Input;
-using Execom.TargetBinding.iOS.Controls;
 using Foundation;
 using MvvmCross.IoC;
 using MvvmCross.Platforms.Ios.Views;
@@ -21,12 +20,6 @@ namespace Execom.TargetBinding.iOS
                                       uiButton.SetTitle(uiButton.Title(UIControlState.Normal), UIControlState.Normal);
             uiButton.Enabled = !uiButton.Enabled;
         }
-
-        //public void Include(CustomUIImageView customUIImageView)
-        //{
-        //    customUIImageView.TintColor = UIColor.Black;
-        //    customUIImageView.TintColorChanged += (sender, args) => { customUIImageView.TintColor = UIColor.Black; };
-        //}
 
         public void Include(UIBarButtonItem barButton)
         {
