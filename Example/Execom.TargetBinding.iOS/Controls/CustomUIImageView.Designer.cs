@@ -8,10 +8,10 @@ using Foundation;
 using System;
 using System.CodeDom.Compiler;
 
-namespace Execom.TargetBinding.iOS.Views
+namespace Execom.TargetBinding.iOS.Controls
 {
-    [Register ("MainView")]
-    partial class MainView
+    [Register ("CustomUIImageView")]
+    partial class CustomUIImageView
     {
         void ReleaseDesignerOutlets ()
         {

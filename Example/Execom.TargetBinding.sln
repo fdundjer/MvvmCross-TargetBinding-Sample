@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Execom.TargetBinding.Android", "Execom.TargetBinding.Android\Execom.TargetBinding.Android.csproj", "{83ABADD2-2BAF-418E-BB96-AC593DDE8DEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Execom.TargetBinding.Core", "Execom.TargetBinding.Core\Execom.TargetBinding.Core.csproj", "{7D04AAB8-D3CF-41F5-BA23-92342DA3B611}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Execom.TargetBinding.Core", "Execom.TargetBinding.Core\Execom.TargetBinding.Core.csproj", "{7D04AAB8-D3CF-41F5-BA23-92342DA3B611}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Execom.TargetBinding.iOS", "Execom.TargetBinding.iOS\Execom.TargetBinding.iOS.csproj", "{80A96B52-6758-4BDB-B0B4-CEA4CA155C60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,16 @@ Global
 		{7D04AAB8-D3CF-41F5-BA23-92342DA3B611}.Release|iPhone.Build.0 = Release|Any CPU
 		{7D04AAB8-D3CF-41F5-BA23-92342DA3B611}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{7D04AAB8-D3CF-41F5-BA23-92342DA3B611}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{80A96B52-6758-4BDB-B0B4-CEA4CA155C60}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{80A96B52-6758-4BDB-B0B4-CEA4CA155C60}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{80A96B52-6758-4BDB-B0B4-CEA4CA155C60}.Debug|iPhone.Build.0 = Debug|iPhone
+		{80A96B52-6758-4BDB-B0B4-CEA4CA155C60}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{80A96B52-6758-4BDB-B0B4-CEA4CA155C60}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{80A96B52-6758-4BDB-B0B4-CEA4CA155C60}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{80A96B52-6758-4BDB-B0B4-CEA4CA155C60}.Release|iPhone.ActiveCfg = Release|iPhone
+		{80A96B52-6758-4BDB-B0B4-CEA4CA155C60}.Release|iPhone.Build.0 = Release|iPhone
+		{80A96B52-6758-4BDB-B0B4-CEA4CA155C60}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{80A96B52-6758-4BDB-B0B4-CEA4CA155C60}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

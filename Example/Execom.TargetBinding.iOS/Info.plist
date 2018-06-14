@@ -5,7 +5,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Execom.TargetBinding</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.execom.targetbinding</string>
+	<string>eu.execom.targetbinding</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
