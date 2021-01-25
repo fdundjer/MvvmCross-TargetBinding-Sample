@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Globalization;
+using HTEC.TargetBinding.iOS.Common;
 using MvvmCross.Converters;
 using MvvmCross.Plugin.Color.Platforms.Ios;
 using UIKit;
@@ -11,7 +12,7 @@ namespace HTEC.TargetBinding.iOS.Converters
     {
         protected override UIColor Convert(Color value, Type targetType, object parameter, CultureInfo culture)
         {
-            return value.ToNativeColor();
+            return value == Color.Empty ? Colors.DefaultLogoTintColor : value.ToNativeColor();
         }
 
         protected override Color ConvertBack(UIColor value, Type targetType, object parameter, CultureInfo culture)

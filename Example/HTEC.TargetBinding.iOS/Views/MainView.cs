@@ -1,5 +1,5 @@
-﻿using System;
-using HTEC.TargetBinding.Core.ViewModels;
+﻿using HTEC.TargetBinding.Core.ViewModels;
+using HTEC.TargetBinding.iOS.Common;
 using HTEC.TargetBinding.iOS.Converters;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platforms.Ios.Presenters.Attributes;
@@ -28,8 +28,7 @@ namespace HTEC.TargetBinding.iOS.Views
 
             ResetColorToDefaultButton.TouchUpInside += (sender, args) =>
             {
-                LogoImageView.TintColor = new UIColor(red: (nfloat)(52 / 255.0), green: (nfloat)(152 / 255.0),
-                    blue: (nfloat)(219 / 255.0), alpha: 1);
+                LogoImageView.TintColor = Colors.DefaultLogoTintColor;
             };
         }
     }

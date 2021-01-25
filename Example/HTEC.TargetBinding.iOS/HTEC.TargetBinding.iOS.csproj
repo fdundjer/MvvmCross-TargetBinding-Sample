@@ -65,6 +65,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Bindings\TintColorMvxTargetBinding.cs" />
+    <Compile Include="Common\Colors.cs" />
     <Compile Include="Controls\CustomUIImageView.cs" />
     <Compile Include="Controls\CustomUIImageView.Designer.cs">
       <DependentUpon>CustomUIImageView.cs</DependentUpon>
