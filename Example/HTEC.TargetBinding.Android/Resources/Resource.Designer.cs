@@ -43,6 +43,24 @@ namespace HTEC.TargetBinding.Android
 			global::MvvmCross.Resource.Styleable.MvxListView = global::HTEC.TargetBinding.Android.Resource.Styleable.MvxListView;
 			global::MvvmCross.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::HTEC.TargetBinding.Android.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Resource.Styleable.MvxListView_MvxItemTemplate = global::HTEC.TargetBinding.Android.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::MvvmCross.Plugin.Color.Resource.Attribute.MvxBind = global::HTEC.TargetBinding.Android.Resource.Attribute.MvxBind;
+			global::MvvmCross.Plugin.Color.Resource.Attribute.MvxDropDownItemTemplate = global::HTEC.TargetBinding.Android.Resource.Attribute.MvxDropDownItemTemplate;
+			global::MvvmCross.Plugin.Color.Resource.Attribute.MvxGroupItemTemplate = global::HTEC.TargetBinding.Android.Resource.Attribute.MvxGroupItemTemplate;
+			global::MvvmCross.Plugin.Color.Resource.Attribute.MvxItemTemplate = global::HTEC.TargetBinding.Android.Resource.Attribute.MvxItemTemplate;
+			global::MvvmCross.Plugin.Color.Resource.Attribute.MvxLang = global::HTEC.TargetBinding.Android.Resource.Attribute.MvxLang;
+			global::MvvmCross.Plugin.Color.Resource.Attribute.MvxTemplate = global::HTEC.TargetBinding.Android.Resource.Attribute.MvxTemplate;
+			global::MvvmCross.Plugin.Color.Resource.Id.MvvmCrossTagId = global::HTEC.TargetBinding.Android.Resource.Id.MvvmCrossTagId;
+			global::MvvmCross.Plugin.Color.Resource.Id.MvxBindingTagUnique = global::HTEC.TargetBinding.Android.Resource.Id.MvxBindingTagUnique;
+			global::MvvmCross.Plugin.Color.Resource.Styleable.MvxBinding = global::HTEC.TargetBinding.Android.Resource.Styleable.MvxBinding;
+			global::MvvmCross.Plugin.Color.Resource.Styleable.MvxBinding_MvxBind = global::HTEC.TargetBinding.Android.Resource.Styleable.MvxBinding_MvxBind;
+			global::MvvmCross.Plugin.Color.Resource.Styleable.MvxBinding_MvxLang = global::HTEC.TargetBinding.Android.Resource.Styleable.MvxBinding_MvxLang;
+			global::MvvmCross.Plugin.Color.Resource.Styleable.MvxControl = global::HTEC.TargetBinding.Android.Resource.Styleable.MvxControl;
+			global::MvvmCross.Plugin.Color.Resource.Styleable.MvxControl_MvxTemplate = global::HTEC.TargetBinding.Android.Resource.Styleable.MvxControl_MvxTemplate;
+			global::MvvmCross.Plugin.Color.Resource.Styleable.MvxExpandableListView = global::HTEC.TargetBinding.Android.Resource.Styleable.MvxExpandableListView;
+			global::MvvmCross.Plugin.Color.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::HTEC.TargetBinding.Android.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
+			global::MvvmCross.Plugin.Color.Resource.Styleable.MvxListView = global::HTEC.TargetBinding.Android.Resource.Styleable.MvxListView;
+			global::MvvmCross.Plugin.Color.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::HTEC.TargetBinding.Android.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
+			global::MvvmCross.Plugin.Color.Resource.Styleable.MvxListView_MvxItemTemplate = global::HTEC.TargetBinding.Android.Resource.Styleable.MvxListView_MvxItemTemplate;
 		}
 		
 		public partial class Animation

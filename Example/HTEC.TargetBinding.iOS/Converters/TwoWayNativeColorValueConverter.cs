@@ -1,24 +1,24 @@
 ﻿using System;
+using System.Drawing;
 using System.Globalization;
 using MvvmCross.Converters;
 using MvvmCross.Plugin.Color.Platforms.Ios;
-using MvvmCross.UI;
 using UIKit;
 
 namespace HTEC.TargetBinding.iOS.Converters
 {
-    public class TwoWayNativeColorValueConverter : MvxValueConverter<MvxColor, UIColor>
+    public class TwoWayNativeColorValueConverter : MvxValueConverter<Color, UIColor>
     {
-        protected override UIColor Convert(MvxColor value, Type targetType, object parameter, CultureInfo culture)
+        protected override UIColor Convert(Color value, Type targetType, object parameter, CultureInfo culture)
         {
-            return value?.ToNativeColor();
+            return value.ToNativeColor();
         }
 
-        protected override MvxColor ConvertBack(UIColor value, Type targetType, object parameter, CultureInfo culture)
+        protected override Color ConvertBack(UIColor value, Type targetType, object parameter, CultureInfo culture)
         {
             value.GetRGBA(out var red, out var green, out var blue, out var alpha);
-            var mvxColor = new MvxColor((int)(red * 255), (int)(green * 255), (int)(blue * 255), (int)(alpha * 255));
-            return mvxColor;
+            var color = Color.FromArgb((int)(red * 255), (int)(green * 255), (int)(blue * 255), (int)(alpha * 255));
+            return color;
         }
     }
 }
