@@ -18,7 +18,7 @@ namespace HTEC.TargetBinding.iOS.Views
 
         public override void ViewDidLoad()
         {
-            LogoImageView.Image = LogoImageView.Image.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
+            LogoImageView.Image = LogoImageView.Image.ImageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate);
 
             base.ViewDidLoad();
             var set = this.CreateBindingSet<MainView, MainViewModel>();
@@ -26,25 +26,10 @@ namespace HTEC.TargetBinding.iOS.Views
             set.Bind(LogoImageView).For(v => v.TintColor).To(vm => vm.ImageTintColor).TwoWay().WithConversion(new TwoWayNativeColorValueConverter());
             set.Apply();
 
-            ChangeTintColorButton.TouchUpInside += (sender, args) =>
-            {
-                if (LogoImageView.Image.RenderingMode != UIImageRenderingMode.AlwaysTemplate)
-                {
-                    LogoImageView.Image = LogoImageView.Image.ImageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate);
-                }
-                
-                if (ViewModel.ChangeTintColorCommand.CanExecute())
-                {
-                    ViewModel.ChangeTintColorCommand.Execute();
-                }
-            };
-
             ResetColorToDefaultButton.TouchUpInside += (sender, args) =>
             {
-                if (LogoImageView.Image.RenderingMode != UIImageRenderingMode.AlwaysOriginal)
-                {
-                    LogoImageView.Image = LogoImageView.Image.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
-                }
+                LogoImageView.TintColor = new UIColor(red: (nfloat)(52 / 255.0), green: (nfloat)(152 / 255.0),
+                    blue: (nfloat)(219 / 255.0), alpha: 1);
             };
         }
     }

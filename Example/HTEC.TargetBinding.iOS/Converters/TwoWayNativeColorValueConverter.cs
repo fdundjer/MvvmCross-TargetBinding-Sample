@@ -17,7 +17,7 @@ namespace HTEC.TargetBinding.iOS.Converters
         protected override Color ConvertBack(UIColor value, Type targetType, object parameter, CultureInfo culture)
         {
             value.GetRGBA(out var red, out var green, out var blue, out var alpha);
-            var color = Color.FromArgb((int)(red * 255), (int)(green * 255), (int)(blue * 255), (int)(alpha * 255));
+            var color = Color.FromArgb((int)(alpha * 255), (int)(red * 255), (int)(green * 255), (int)(blue * 255));
             return color;
         }
     }
