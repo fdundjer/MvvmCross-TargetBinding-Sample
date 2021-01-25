@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Drawing;
 using MvvmCross.Commands;
-using MvvmCross.UI;
 using MvvmCross.ViewModels;
 
 namespace Execom.TargetBinding.Core.ViewModels
@@ -8,7 +8,7 @@ namespace Execom.TargetBinding.Core.ViewModels
     public class MainViewModel : MvxViewModel
     {
         private static readonly Random Rand = new Random();
-        private MvxColor _imageTintColor;
+        private Color _imageTintColor;
 
         public MainViewModel()
         {
@@ -17,7 +17,7 @@ namespace Execom.TargetBinding.Core.ViewModels
 
         public MvxCommand ChangeTintColorCommand { get; set; }
 
-        public MvxColor ImageTintColor
+        public Color ImageTintColor
         {
             get => _imageTintColor;
             set => SetProperty(ref _imageTintColor, value);
@@ -25,7 +25,7 @@ namespace Execom.TargetBinding.Core.ViewModels
 
         private void HandleChangeTintColorCommand()
         {
-            ImageTintColor = new MvxColor(Rand.Next(256), Rand.Next(256), Rand.Next(256));
+            ImageTintColor = Color.FromArgb(Rand.Next(256), Rand.Next(256), Rand.Next(256));
         }
     }
 }
